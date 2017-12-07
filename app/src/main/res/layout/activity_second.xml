@@ -20,6 +20,8 @@
             android:gravity="center"
             android:text="THIS PERSON SAID"
             android:textAlignment="center"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="18sp"
             tools:layout_editor_absoluteX="132dp"
             tools:layout_editor_absoluteY="49dp" />
 
@@ -28,10 +30,12 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="0.85"
-            android:gravity="center"
             android:elevation="2dp"
+            android:gravity="center"
             android:text="TextView"
             android:textAlignment="center"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="18sp"
             tools:layout_editor_absoluteX="51dp"
             tools:layout_editor_absoluteY="94dp" />
 
@@ -39,6 +43,7 @@
             android:id="@+id/btn_back"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@android:color/holo_orange_light"
             android:onClick="callMainActivity"
             android:text="BACK"
             android:textAlignment="center"

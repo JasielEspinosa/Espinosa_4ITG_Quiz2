@@ -26,7 +26,6 @@ public class SecondActivity extends AppCompatActivity {
         tv_paragraph = (TextView) findViewById(R.id.tv_paragraph);
         btn_back = (Button) findViewById(R.id.btn_back);
 
-
         StringBuffer buffer = new StringBuffer();
         int read = 0;
         try {
@@ -39,7 +38,7 @@ public class SecondActivity extends AppCompatActivity {
             fisParagraph = openFileInput("quoteParagraph.txt");
             while ((read = fisParagraph.read()) != -1) {
                 buffer.append((char) read);
-                tv_paragraph.setText(buffer.toString());
+                tv_paragraph.setText("\""+buffer.toString()+"\"");
             }
         } catch (FileNotFoundException fnfe) {
             fnfe.printStackTrace();
@@ -53,7 +52,6 @@ public class SecondActivity extends AppCompatActivity {
                 ioe.printStackTrace();
             }
         }
-
     }
 
     public void callMainActivity(View view) {

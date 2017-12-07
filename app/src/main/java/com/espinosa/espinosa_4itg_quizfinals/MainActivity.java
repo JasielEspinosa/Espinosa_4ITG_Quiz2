@@ -35,7 +35,6 @@ public class MainActivity extends AppCompatActivity {
         try {
             fosAuthor = openFileOutput("quoteAuthor.txt", Context.MODE_PRIVATE);
             fosAuthor.write(name.getBytes());
-
             fosParagraph = openFileOutput("quoteParagraph.txt", Context.MODE_PRIVATE);
             fosParagraph.write(paragraph.getBytes());
         } catch (FileNotFoundException fnfe) {
@@ -55,7 +54,6 @@ public class MainActivity extends AppCompatActivity {
 
     public void callSecondActivity(View view) {
         Intent intent = new Intent(this, SecondActivity.class);
-        //intent.putExtra("name", etName.getText().toString());
         startActivity(intent);
     }
 
