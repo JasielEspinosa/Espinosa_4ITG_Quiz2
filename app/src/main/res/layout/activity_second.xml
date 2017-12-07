@@ -7,9 +7,10 @@
     tools:context="com.espinosa.espinosa_4itg_quizfinals.SecondActivity">
 
     <LinearLayout
+
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/colorAccent"
+        android:background="@drawable/border"
         android:orientation="vertical"
         tools:layout_editor_absoluteX="8dp"
         tools:layout_editor_absoluteY="0dp">
