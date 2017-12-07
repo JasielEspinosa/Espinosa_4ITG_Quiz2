@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.espinosa.espinosa_4itg_quizfinals.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="FAMOUS QUOTES:"
+            android:textAlignment="center"
+            tools:layout_editor_absoluteX="132dp"
+            tools:layout_editor_absoluteY="73dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:text="AUTHOR:"
+                tools:layout_editor_absoluteX="74dp"
+                tools:layout_editor_absoluteY="162dp" />
+
+            <EditText
+                android:id="@+id/input_author"
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
+                android:ems="10"
+                android:hint="NAME"
+                android:inputType="textPersonName"
+                android:textAlignment="center"
+                tools:layout_editor_absoluteX="85dp"
+                tools:layout_editor_absoluteY="195dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:text="QUOTE:"
+                tools:layout_editor_absoluteX="74dp"
+                tools:layout_editor_absoluteY="262dp" />
+
+            <EditText
+                android:id="@+id/input_paragraph"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:ems="10"
+                android:hint="PARAGRAPH"
+                android:inputType="textMultiLine"
+                android:textAlignment="center"
+                tools:layout_editor_absoluteX="85dp"
+                tools:layout_editor_absoluteY="322dp"
+                android:layout_weight="0.78" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="saveQuote"
+                android:text="SAVE"
+                tools:layout_editor_absoluteX="54dp"
+                tools:layout_editor_absoluteY="410dp" />
+
+            <Button
+                android:id="@+id/btn_next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="callSecondActivity"
+                android:text="NEXT"
+                tools:layout_editor_absoluteX="249dp"
+                tools:layout_editor_absoluteY="410dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
